@@ -1,11 +1,9 @@
 # Lab 1: Creating and Managing Azure Virtual Machines
+![Capture d'écran 1](1.PNG)
 
+![Capture d'écran 2](2.PNG)
 
-
-[Capture d'écran 1](1.PNG)
-
-[Capture d'écran 2](2.PNG)
-
+![Capture d'écran 3](3.PNG)
 
 
 ```bash
