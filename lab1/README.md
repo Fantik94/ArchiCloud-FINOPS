@@ -1,5 +1,13 @@
 # Lab 1: Creating and Managing Azure Virtual Machines
 
+
+
+[Capture d'écran 1](1.PNG)
+
+[Capture d'écran 2](2.PNG)
+
+
+
 ```bash
 az vm create \
     --resource-group <nom_du_groupe> \
@@ -11,6 +19,7 @@ az vm create \
     --size Standard_B1s
 ```
 
-Capture d'écran: (1.PNG)
 
-Capture d'écran: (2.PNG)
+
+
+
