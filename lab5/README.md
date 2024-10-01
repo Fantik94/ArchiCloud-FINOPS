@@ -57,7 +57,7 @@ bcp <database.schema.table> in <file.csv> -S <server>.database.windows.net -d <d
 
 1. Activez la géo-réplication pour assurer une haute disponibilité dans une région secondaire.
 
-**Capture d’écran** : ![4.png](4.png)
+**Capture d’écran** : ![4.png](3.png)
 
 ### Commande équivalente (Azure CLI)
 ```bash
