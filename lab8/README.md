@@ -9,7 +9,7 @@
    - *Pricing Tier* : Standard S0
 
 
-**Capture d’écran** : ![1.png](1.png)
+**Capture d’écran** : ![1.png](2.png)
 
 
 ### Commande Azure CLI équivalente :
@@ -67,3 +67,5 @@ print(result)
 1. Utilisez l'application pour analyser des sentiments et des phrases clés à partir de textes d'exemple. Le résultat de l'API sera imprimé en JSON, contenant le score de sentiment (positif, négatif, neutre) pour chaque document analysé.
 
 ---
+
+**Capture d’écran** : ![4.png](4.png)
