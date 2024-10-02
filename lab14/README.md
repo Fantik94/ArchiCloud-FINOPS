@@ -28,7 +28,7 @@ az network dns zone create \
 
 **Capture d’écran** : ![3.png](2.png)
 
-### Ajouter un enregistrement A
+### Ajouter un enregistrement test1 et test2
 ```bash
 az network dns record-set a add-record \
   --resource-group <nom_du_groupe> \
