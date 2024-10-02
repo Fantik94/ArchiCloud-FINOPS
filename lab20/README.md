@@ -9,6 +9,15 @@
 
 **Capture d’écran** : ![1.png](1.png)
 
+   ```bash
+   az aks create \
+     --resource-group <nom_du_groupe> \
+     --name AKSClusterLab20 \
+     --node-count 3 \
+     --enable-addons monitoring \
+     --generate-ssh-keys
+   ```
+
 ---
 
 ## Étape 2 : Déployer une application conteneurisée à l'aide de manifestes Kubernetes
@@ -67,6 +76,14 @@ spec:
 **Capture d’écran** : ![3.png](3.png)
 **Capture d’écran** : ![4.png](4.png)
 **Capture d’écran** : ![7.png](7.png)
+
+   ```bash
+   kubectl scale --replicas=4 deployment/nginx-deployment
+   ```
+
+      ```bash
+   kubectl get pods
+   ```
 
 
 
