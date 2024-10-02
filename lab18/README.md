@@ -8,6 +8,11 @@
 
 **Capture d’écran** : ![1.png](1.png)
 
+### Commande équivalente (Azure CLI)
+```bash
+az desktopvirtualization hostpool create     --resource-group <nom_du_groupe>     --name <nom_du_hostpool>     --location <region>     --friendly-name "Host Pool Lab18"     --description "Host Pool for Azure Virtual Desktop Lab"
+```
+
 ---
 
 ## Étape 2 : Configurer les pools d'hôtes, les hôtes de session, et les espaces de travail
@@ -17,6 +22,12 @@
 
 **Capture d’écran** : ![2.png](2.png)
 **Capture d’écran** : ![3.png](3.png)
+
+### Commande équivalente (Azure CLI)
+```bash
+az desktopvirtualization applicationgroup create     --resource-group <nom_du_groupe>     --host-pool-name <nom_du_hostpool>     --name <nom_du_workspace>     --location <region>     --friendly-name "Workspace Lab18"     --description "Workspace for Virtual Desktop Applications"
+```
+
 
 
 ---
