@@ -5,8 +5,8 @@ import azure.functions as func
 from azure.cosmos import CosmosClient, exceptions
 
 # Connexion à Cosmos DB via la chaîne de connexion
-COSMOS_DB_ENDPOINT = os.environ['COSMOS_DB_ENDPOINT']
-COSMOS_DB_KEY = os.environ['COSMOS_DB_KEY']
+COSMOS_DB_ENDPOINT = "https://tp2.documents.azure.com:443/"
+COSMOS_DB_KEY = "bwDPbmiswDpBcxJBkbnc5hKpxujzuW50yRUO2fZoWH64fxLbx0VopEdzD0lEt8KRWUY8vYhQJHxzACDbPATvfg=="
 DATABASE_NAME = 'users'
 CONTAINER_NAME = 'user_data'
 
