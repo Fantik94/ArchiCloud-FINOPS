@@ -27,12 +27,16 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
     # Récupérer le client du conteneur Blob
     container_client = blob_service_client.get_container_client(container_name)
 
-    # Générer un nom unique basé sur la date et l'heure pour les fichiers logs
+    # Nom du fichier blob, unique par utilisateur et type de log
     blob_name = f'logs-{log_data.get("user_id")}-{log_data.get("level")}.txt'
     blob_client = container_client.get_blob_client(blob_name)
 
-    # Ajouter le log au fichier blob
+    # Si le blob n'existe pas, créer un AppendBlob
+    if not blob_client.exists():
+        blob_client.create_append_blob()
+
+    # Ajouter le log au fichier blob en mode append
     blob_content = json.dumps(log_data) + "\n"
-    blob_client.upload_blob(blob_content, blob_type="AppendBlob", overwrite=False)
+    blob_client.append_block(blob_content)
 
     return func.HttpResponse(f"Log has been stored in {container_name}", status_code=200)
