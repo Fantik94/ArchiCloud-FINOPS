@@ -81,7 +81,7 @@ spec:
    kubectl scale --replicas=4 deployment/nginx-deployment
    ```
 
-      ```bash
+   ```bash
    kubectl get pods
    ```
 
